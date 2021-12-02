@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "dancing";
-  src: url("../../public/fonts/static/DancingScript-Regular.ttf");
+  font-family: "courgette";
+  src: url("../../public/fonts/Courgette-Regular.ttf");
 }
 /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
@@ -6115,6 +6115,34 @@ readers do not read off random characters that represent icons */
 .far {
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
+}
+
+.transparent {
+  border-bottom: 1px solid #ffffff4f;
+  border-top: 1px solid #ffffff4f;
+  border-collapse: collapse;
+}
+
+.cucurbit {
+  font-family: courgette;
+}
+
+.btn-group {
+  margin-bottom: 15%;
+}
+
+.carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 13px !important;
+  height: 13px !important;
+  margin-right: 5px;
+  margin-left: 5px;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border: 5px solid red;
+  transition: opacity 0.6s ease;
+  border-radius: 50% !important;
 }
 
 /*!
@@ -13727,6 +13755,38 @@ textarea.form-control-lg {
   font-size: 1rem !important;
 }
 
+.fs-x5 {
+  font-size: calc(1.625rem + 4.5vw) !important;
+}
+
+.fs-x4 {
+  font-size: calc(1.575rem + 3.9vw) !important;
+}
+
+.fs-x3 {
+  font-size: calc(1.525rem + 3.3vw) !important;
+}
+
+.fs-x2 {
+  font-size: calc(1.475rem + 2.7vw) !important;
+}
+
+.fs-x1 {
+  font-size: calc(1.425rem + 2.1vw) !important;
+}
+
+.fs-7 {
+  font-size: 0.75rem !important;
+}
+
+.fs-8 {
+  font-size: 0.5rem !important;
+}
+
+.fs-9 {
+  font-size: 0.25rem !important;
+}
+
 .fst-italic {
   font-style: italic !important;
 }
@@ -18094,6 +18154,26 @@ textarea.form-control-lg {
   .fs-4 {
     font-size: 1.5rem !important;
   }
+
+  .fs-x5 {
+    font-size: 5rem !important;
+  }
+
+  .fs-x4 {
+    font-size: 4.5rem !important;
+  }
+
+  .fs-x3 {
+    font-size: 4rem !important;
+  }
+
+  .fs-x2 {
+    font-size: 3.5rem !important;
+  }
+
+  .fs-x1 {
+    font-size: 3rem !important;
+  }
 }
 @media print {
   .d-print-inline {
@@ -18135,6 +18215,49 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+header {
+  background-image: linear-gradient(rgba(38, 38, 58, 0.7), rgba(39, 38, 48, 0.6)), url("../img/banner1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar-nav li {
+  margin-top: 35px;
+}
+.navbar-nav li a:hover {
+  background-color: #C42D40;
+}
+
+.carousel-indicators .active {
+  color: white;
+  width: 6px !important;
+  height: 6px !important;
+  border: 6px double white;
+  margin-top: 7px;
+}
+
+.carousel-inner {
+  padding-bottom: 150px;
+}
+
+.borderbottom {
+  background-image: url("../../public/img/bottom_decoration_img.png");
+  background-color: transparent;
+  height: 10px;
+  background-position: center;
+}
+
+.containersect1 {
+  background-image: url("../img/main_bg.jpg");
+  background-repeat: repeat-x repeat-y;
+  height: auto;
+  border-bottom: 10px solid transparent;
+}
+
+.container:first-of-type {
+  background-color: white;
+  border: 1px solid #5858584f;
 }
 
 /*# sourceMappingURL=style.css.map */
