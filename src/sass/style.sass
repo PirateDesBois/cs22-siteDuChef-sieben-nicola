@@ -2,11 +2,14 @@
 @import "./_icon"
 @import "./_variables"
 @import "../../node_modules/bootstrap/scss/bootstrap.scss"
+
 body
     background-image: url("../img/main_bg.jpg")
     background-repeat: repeat-x repeat-y
     height: auto
     border-bottom: 10px solid transparent
+    padding: 0
+    margin: 0
 header
     background-image: linear-gradient(rgba(38, 38, 58, 0.7),rgba(39, 38, 48, 0.6)), url("../img/banner1.jpg")
     background-size: cover
@@ -29,8 +32,14 @@ header
     background-color: transparent
     height: 10px
     background-position: center
+.bordertop
+    background-image: url("../../public/img/footer_bottom_decoration_img.png")
+    background-color: transparent
+    height: 10px
+    background-position: center
+
 .containersect2
-    background-image: url(../../public/img/team_background.jpg)
+    background-image: url("../../public/img/team_background.jpg")
     width: 100% auto
     height: auto
 .container:first-of-type
@@ -60,22 +69,39 @@ header
     float: left
 .center
     display: flex
-    justify-content: center
+    justify-content: center !important
 .booking
-    background-image: url(../../public/img/book_table_bg.jpg)
+    background-image: url("../../public/img/book_table_bg.jpg")
     background-size: cover
     border-radius: 20px
 .shadeofgrey
     color: #ffffffb9
 
-::-webkit-input-placeholder
-    font-size: 14px
-.select-style
-    font-size: 14px
-.br13
-    border-radius: 13px
+.blog1, .blog2
+    .img
+        position: relative
+        
+    .likes
+        position: absolute
+        z-index: 1 !important
+        left: 45px
+        top: 250px
+.testimonial
+    background-image: linear-gradient(rgba(38, 38, 58, 0.7),rgba(39, 38, 48, 0.6)), url(../../public/img/testimonials_background.jpg)
+    background-size: cover
+    height: auto
 
-
+footer
+    background-image: url("../../public/img/footer_background.jpg")
+    background-size: cover
+    height: auto
+.red-footer
+    background-color: #C42D40 
+    background-size: cover
+    height: 90px
+.icon-footer
+    i
+        font-size: 25px  
 
 
 
