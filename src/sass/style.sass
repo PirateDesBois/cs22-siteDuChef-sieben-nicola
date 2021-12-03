@@ -2,6 +2,11 @@
 @import "./_icon"
 @import "./_variables"
 @import "../../node_modules/bootstrap/scss/bootstrap.scss"
+body
+    background-image: url("../img/main_bg.jpg")
+    background-repeat: repeat-x repeat-y
+    height: auto
+    border-bottom: 10px solid transparent
 header
     background-image: linear-gradient(rgba(38, 38, 58, 0.7),rgba(39, 38, 48, 0.6)), url("../img/banner1.jpg")
     background-size: cover
@@ -24,16 +29,10 @@ header
     background-color: transparent
     height: 10px
     background-position: center
-.containersect1
-    background-image: url("../img/main_bg.jpg")
-    background-repeat: repeat-x repeat-y
-    height: auto
-    border-bottom: 10px solid transparent
 .containersect2
     background-image: url(../../public/img/team_background.jpg)
     width: 100% auto
     height: auto
-
 .container:first-of-type
     background-color: white
     border: 1px solid #5858582d
@@ -59,6 +58,26 @@ header
     float: right
 .left
     float: left
+.center
+    display: flex
+    justify-content: center
+.booking
+    background-image: url(../../public/img/book_table_bg.jpg)
+    background-size: cover
+    border-radius: 20px
+.shadeofgrey
+    color: #ffffffb9
+
+::-webkit-input-placeholder
+    font-size: 14px
+.select-style
+    font-size: 14px
+.br13
+    border-radius: 13px
+
+
+
+
 
 
 

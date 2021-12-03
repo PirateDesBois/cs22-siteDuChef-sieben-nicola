@@ -8367,7 +8367,7 @@ progress {
   height: 1.5em;
 }
 .form-control::placeholder {
-  color: #6c757d;
+  color: black;
   opacity: 1;
 }
 .form-control:disabled, .form-control[readonly] {
@@ -20482,6 +20482,13 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  background-image: url("../img/main_bg.jpg");
+  background-repeat: repeat-x repeat-y;
+  height: auto;
+  border-bottom: 10px solid transparent;
+}
+
 header {
   background-image: linear-gradient(rgba(38, 38, 58, 0.7), rgba(39, 38, 48, 0.6)), url("../img/banner1.jpg");
   background-size: cover;
@@ -20512,13 +20519,6 @@ header {
   background-color: transparent;
   height: 10px;
   background-position: center;
-}
-
-.containersect1 {
-  background-image: url("../img/main_bg.jpg");
-  background-repeat: repeat-x repeat-y;
-  height: auto;
-  border-bottom: 10px solid transparent;
 }
 
 .containersect2 {
@@ -20565,6 +20565,33 @@ header {
 
 .left {
   float: left;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.booking {
+  background-image: url(../../public/img/book_table_bg.jpg);
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.shadeofgrey {
+  color: #ffffffb9;
+}
+
+::-webkit-input-placeholder {
+  font-size: 14px;
+}
+
+.select-style {
+  font-size: 14px;
+}
+
+.br13 {
+  border-radius: 13px;
 }
 
 /*# sourceMappingURL=style.css.map */
