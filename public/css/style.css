@@ -20506,7 +20506,6 @@ body {
   background-image: url("../img/main_bg.jpg");
   background-repeat: repeat-x repeat-y;
   height: auto;
-  border-bottom: 10px solid transparent;
   padding: 0;
   margin: 0;
 }
@@ -20534,6 +20533,14 @@ header {
 
 .carousel-inner {
   padding-bottom: 150px;
+}
+
+.carousel-item {
+  transition: transform 2s ease-in-out;
+}
+
+.carousel-fade .active.carousel-item-start, .carousel-fade .active.carousel-item-end {
+  transition: opacity 0s 2s;
 }
 
 .borderbottom {
@@ -20617,8 +20624,11 @@ header {
 .blog1 .likes, .blog2 .likes {
   position: absolute;
   z-index: 1 !important;
-  left: 55px;
-  top: 260px;
+  bottom: -20px;
+}
+
+.text-position {
+  margin-left: 150px !important;
 }
 
 .testimonial {
@@ -20668,17 +20678,6 @@ footer {
     font-size: 13px;
     padding: 20px !important;
   }
-
-  .img {
-    position: relative;
-  }
-
-  .likes {
-    position: absolute;
-    z-index: 1 !important;
-    left: 30px !important;
-    top: 230px !important;
-  }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .navbar-nav {
@@ -20709,6 +20708,14 @@ footer {
 
   .card-body .text-position {
     max-width: max-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .icon-footer {
+    display: flex;
+    flex-wrap: nowrap;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
@@ -20752,6 +20759,11 @@ footer {
   .first-brand > img {
     width: 30px;
     height: auto;
+  }
+
+  .text-position {
+    text-align: center !important;
+    margin-left: 170px !important;
   }
 }
 @media (max-width: 576px) {
@@ -20802,32 +20814,56 @@ footer {
     height: auto;
   }
 
+  .tab-content .card-body > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+  }
   .tab-content .card-body > div > div h5, .tab-content .card-body > div > div .h5 {
     font-size: 10px !important;
   }
   .tab-content .card-body > div > div p {
     font-size: 10px;
+    text-align: center;
   }
   .tab-content .card-body > div > div img {
-    width: 50px;
+    width: 80px;
     height: auto;
   }
 
-  .img {
-    position: relative;
+  .text-position {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center !important;
+    margin-left: 0px !important;
+    padding-left: 0px !important;
   }
 
-  .likes {
-    position: relative;
-    z-index: 1 !important;
-    left: 0px !important;
-    top: 100px !important;
+  .row-1, .row-2 {
+    display: flex;
+    justify-content: center;
+  }
+  .row-1 img, .row-2 img {
+    width: 20% !important;
+    height: auto;
+  }
+
+  .icon-footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .grp1 span, .grp2 span, .grp3 span {
+    font-size: 10px;
+  }
+
+  .likes p {
+    font-size: 10px !important;
   }
   .likes span {
-    font-size: 20px;
-  }
-  .likes p {
-    font-size: 10px;
+    font-size: 15px !important;
   }
 }
 

@@ -7,18 +7,19 @@ body
     background-image: url("../img/main_bg.jpg")
     background-repeat: repeat-x repeat-y
     height: auto
-    border-bottom: 10px solid transparent
     padding: 0
     margin: 0
 header
     background-image: linear-gradient(rgba(38, 38, 58, 0.7),rgba(39, 38, 48, 0.6)), url("../img/banner1.jpg")
     background-size: cover
     background-repeat: no-repeat
+//////////////////////////////// navbar //////////////////////////////////////////////////////
 .navbar-nav
     li
         margin-top:35px
         a:hover
             background-color: #C42D40
+/////////////////////////////// carousel ///////////////////////////////////////////////////
 .carousel-indicators .active
     color: white
     width: 6px !important
@@ -27,6 +28,12 @@ header
     margin-top: 7px
 .carousel-inner
     padding-bottom: 150px
+.carousel-item 
+    transition: transform 2s ease-in-out
+.carousel-fade .active.carousel-item-start, .carousel-fade .active.carousel-item-end 
+    transition: opacity 0s 2s
+
+
 .borderbottom
     background-image: url("../../public/img/bottom_decoration_img.png")
     background-color: transparent
@@ -83,8 +90,9 @@ header
     .likes
         position: absolute
         z-index: 1 !important
-        left: 55px
-        top: 260px
+        bottom: -20px
+.text-position
+    margin-left: 150px !important
 .testimonial
     background-image: linear-gradient(rgba(38, 38, 58, 0.7),rgba(39, 38, 48, 0.6)), url(../../public/img/testimonials_background.jpg)
     background-size: cover
@@ -115,19 +123,11 @@ footer
 .bords-page-bas
     position: relative
 
+////////////////////////////////////////////////// MediaQueries /////////////////////////////////////////////////////////////////////////
 @media (min-width: 992px) and (max-width:1200px)
     .nav-link
         font-size: 13px
         padding:20px !important
-    .blog1, .blog2
-    .img
-        position: relative
-        
-    .likes
-        position: absolute
-        z-index: 1 !important
-        left: 30px !important
-        top: 230px !important
     
 
 @media (min-width: 768px) and (max-width: 992px)
@@ -139,7 +139,6 @@ footer
         padding: 0px
     .nav-link
         font-size: 10px
-
     .second-brand
         display: none
     .first-brand
@@ -150,9 +149,13 @@ footer
     .card-body
         .text-position
             max-width: max-content
+            display: flex
+            justify-content: center
+            flex-direction: column
     
-            
-        
+    .icon-footer
+        display: flex
+        flex-wrap: nowrap
 @media (min-width: 576px) and (max-width:768px)
     .col-nav-tab
         >div
@@ -178,7 +181,6 @@ footer
     .nav-link
         font-size: 10px
         text-align: center
-
     .second-brand
         display: none
     .first-brand
@@ -186,6 +188,11 @@ footer
         >img
             width: 30px
             height: auto
+
+    .text-position
+        text-align: center !important
+        margin-left: 170px !important      
+       
 
 
 @media (max-width:576px) 
@@ -229,28 +236,46 @@ footer
         .card-body
             >div
                 >div
+                    display: flex
+                    flex-direction: column 
+                    justify-content: center !important
+                    align-items: center !important
                     h5
                         font-size: 10px !important
                     p
                         font-size:10px
+                        text-align: center
                     img
-                        width:50px
-                        height: auto  
-    .blog1, .blog2
-    .img
-        position: relative
-        
-    .likes
-        position: relative
-        z-index: 1 !important
-        left: 0px !important
-        top: 100px !important
-        span
-            font-size: 20px
-        p
-            font-size: 10px
+                        width:80px
+                        height: auto
+
     
-       
+    .text-position
+        display: flex
+        justify-content: center
+        flex-direction: column
+        text-align: center !important
+        margin-left: 0px !important
+        padding-left: 0px !important
+    .row-1, .row-2
+        display: flex
+        justify-content: center
+        img
+            width: 20% !important
+            height: auto
+    .icon-footer
+        display: flex
+        justify-content: center
+        
+    .grp1, .grp2, .grp3
+        span
+            font-size:10px
+    .likes
+        p
+            font-size: 10px !important
+        span
+            font-size: 15px !important
+
 
 
 
