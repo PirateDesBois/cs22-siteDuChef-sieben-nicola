@@ -20670,7 +20670,7 @@ footer {
 }
 
 @media (min-width: 2000px) {
-  .nav-link {
+  .but {
     height: 150px !important;
   }
 }
