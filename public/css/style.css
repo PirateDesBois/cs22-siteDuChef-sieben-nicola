@@ -20669,6 +20669,12 @@ footer {
   position: relative;
 }
 
+@media (min-width: 992px) {
+  .nav-link {
+    padding-left: 13px !important;
+    padding-right: 13px !important;
+  }
+}
 @media (min-width: 768px) and (max-width: 992px) {
   .navbar-nav {
     display: flex;
