@@ -20669,6 +20669,11 @@ footer {
   position: relative;
 }
 
+@media (min-width: 2000px) {
+  .nav-link {
+    height: 150px !important;
+  }
+}
 @media (min-width: 992px) {
   .nav-link {
     padding-left: 13px !important;
